@@ -1,0 +1,400 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  color: #333333;
+  background: #ffffff;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h1 {
+  width: 482px;
+  height: 120px;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 54px;
+}
+
+h1,
+h2,
+h4 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+a {
+    color: #333333;
+}
+
+button {
+  height: 96px;
+  background: #fac229;
+  border-radius: 10px;
+  border-style: none;
+  margin: auto;
+  text-align: center;
+  padding: 0;
+}
+
+button:hover {
+    color: #ffffff;
+} 
+
+button:active {
+    background-color: yellow;
+    box-shadow: 0 5px;
+}
+
+/*Header Section*/
+header {
+  background-color: white;
+}
+
+/* Nav bar */
+.nav {
+    height: 100px;
+    padding: 0px 18px;
+}
+
+.logo {
+    float: left;
+    width: 100px;
+    height: 40px;
+    padding-top: 2px;
+    margin-right: 404px;
+    margin-left: 90px;
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: 16px;
+    float: left;
+    margin-right: 50px;
+}
+
+.nav a:hover {
+    color: #FAC229;
+}
+/* Hero-header section */
+
+.header-sect {
+  display: flex;
+  flex-direction: row;
+  padding:  10px;
+  margin-bottom: 141px;
+}
+
+.header-copy {
+  width: 45%;
+  padding-left: 100px;
+}
+
+.header-copy p {
+    margin: 0;
+    width: 446px;
+}
+
+.cta-reservation-btn {
+  opacity: 0.8;
+  margin-top: 69px;
+}
+
+.header-copy button > h3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+    width: 341px;
+  }
+
+.header-img {
+  width: 430px;
+  height: 430px;
+}
+
+/* About Us Section */
+
+.sect-2 {
+  display: flex;
+  flex-direction: row;
+  padding: 60.26px 87.3px 0px;
+  height: 561px;
+  background: #fac229;
+}
+
+.about-us-img {
+  margin-right: 80px;
+  width: 430px;
+  height: 447.02px;
+}
+
+.about-us-copy {
+  width: 446px;
+  height: 204px;
+}
+
+.about-us-copy p {
+    margin: 0%;
+}
+
+/* Menu Section */
+
+.sect-3 {
+  padding: 60px 100px 48px;
+}
+
+.sub-sect-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-header {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu-items p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.cta-download-btn {
+  margin-top: 82px;
+}
+
+.cta-download-btn h3{
+    padding: 26px 31px 32px 38px;
+}
+
+/*Why Choose Us Section */
+
+.sub-sect-2 {
+  /* margin: 150px 100px 179px; */
+  margin-top: 150px;
+  margin-bottom: 179px;
+}
+
+.reason-section {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 154px;
+}
+
+.sub-sect-2-title {
+  width: 50%;
+  margin: auto 71px auto 0px;
+}
+
+.brand-reasons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reason {
+  width: 245px;
+  height: 249px;
+  box-shadow: 0px 4px 80px rgba(68, 68, 68, 0.1);
+  border-radius: 40px 0px;
+  margin-bottom: 27px;
+  padding: 10px;
+  text-align: center;
+}
+
+.first-reason-row {
+  margin-right: 59px;
+}
+
+.reason img {
+  margin-top: 32px;
+}
+
+.reason h4 {
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.cta-reason {
+  width: 466px;
+  text-align: center;
+  margin-left: 251px;
+}
+
+.cta-reason h3 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+}
+
+/* Testimonials Section */
+
+.sub-sect-3 {
+  text-align: center;
+}
+
+.testifier-copy {
+  width: 467px;
+  height: 145px;
+  background: rgba(217, 233, 243, 0.7);
+  border-radius: 10px;
+  margin: auto;
+  padding: 34px 63px 55px 58px;
+  z-index: 0;
+}
+
+.testifier-copy p {
+  margin: 0 0 0 6px;
+  text-align: left;
+  width: 446px;
+  height: 48px;
+}
+
+.arrow-right {
+    position: relative;
+    bottom: 270px;
+    left: 861px;
+    background-color: #FAC229;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.arrow-right img{
+    color: #52398C;
+    padding-top: 20px;
+    padding-left: 13px;
+    width: 15px;
+    height: 29.81px;
+}
+
+.testifier-img {
+  position: relative;
+  top: -46px;
+  width: 120px;
+  height: 120px;
+  z-index: 1;
+}
+
+/* Subscription Section */
+.sub-sect-4 {
+  text-align: center;
+  margin-top: 140px;
+}
+
+.email-insert {
+  width: 790px;
+  height: 70px;
+  background: #e5e5e5;
+  border-radius: 10px;
+  border-style: none;
+  padding-left: 61px;
+  z-index: 0;
+}
+
+.email-insert:active {
+    border-style: none;
+}
+.subscribe-btn {
+  width: 223px;
+  height: 70px;
+  padding-top: 10px;
+  position: relative;
+  top: -71px;
+  left: 315px;
+}
+
+.subscribe-btn h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  margin: auto;
+}
+
+/*Footer Section */
+footer {
+  height: 436px;
+  display: flex;
+  flex-direction: row;
+  background-image: url(images/footer-shape.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding-left: 30%;
+  font-weight: 600;
+  font-size: 18px;
+  font-weight: 27px;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer-menu,
+.talk-to-us {
+  margin: auto 0px;
+  padding-top: 100px;
+}
+
+.footer-menu {
+  width: 35%;
+}
+
+.footer-menu ul {
+  list-style-type: none;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #333333;
+    display: block;
+}
+
+.talk-to-us {
+  width: 38%;
+}
+
+.follow-us {
+  padding-top: 20%;
+}
+
+.social-icons a {
+  width: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.social-icons a:last-child {
+  margin-left: 25px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #333333;
+}
+
+
