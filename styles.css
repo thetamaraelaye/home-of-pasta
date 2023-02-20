@@ -5,6 +5,7 @@ body {
   font-style: normal;
   color: #333333;
   background: #ffffff;
+  overflow-x: hidden;
 }
 
 p {
@@ -40,7 +41,7 @@ a {
 }
 
 button {
-  height: 96px;
+  height: 90px;
   background: #fac229;
   border-radius: 10px;
   border-style: none;
@@ -88,13 +89,21 @@ header {
 .nav a:hover {
     color: #FAC229;
 }
+
+.rect-blur{
+    position: relative;
+    left: -3%;
+    margin: 0px;
+    padding: 0px;
+}
+
 /* Hero-header section */
 
 .header-sect {
   display: flex;
   flex-direction: row;
   padding:  10px;
-  margin-bottom: 141px;
+  margin-bottom: 16px;
 }
 
 .header-copy {
@@ -124,8 +133,10 @@ header {
   height: 430px;
 }
 
+.rect-blur-2 {
+    text-align: center;
+}
 /* About Us Section */
-
 .sect-2 {
   display: flex;
   flex-direction: row;
@@ -150,9 +161,14 @@ header {
 }
 
 /* Menu Section */
+.rect-blur-3 {
+    text-align: right;
+    margin-top: 67px;
+    margin-bottom: 22px;
+}
 
 .sect-3 {
-  padding: 60px 100px 48px;
+  padding: 0px 100px 48px;
 }
 
 .sub-sect-1 {
@@ -188,11 +204,13 @@ header {
 }
 
 /*Why Choose Us Section */
-
+.rect-blur-4 {
+    margin-top: 158px;
+}
 .sub-sect-2 {
   /* margin: 150px 100px 179px; */
-  margin-top: 150px;
-  margin-bottom: 179px;
+  margin-top: 8px;
+  margin-bottom: 20px;
 }
 
 .reason-section {
@@ -234,19 +252,25 @@ header {
   margin-bottom: 0px;
 }
 
+.reservation {
+  display: flex;
+  align-items: center;
+}
 .cta-reason {
-  width: 466px;
-  text-align: center;
-  margin-left: 251px;
+  width: 300px;
 }
 
 .cta-reason h3 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 25px;
   line-height: 38px;
 }
 
 /* Testimonials Section */
+.rect-blur-5 {
+    text-align: right;
+    margin-bottom: 109px;
+}
 
 .sub-sect-3 {
   text-align: center;
@@ -299,6 +323,23 @@ header {
 .sub-sect-4 {
   text-align: center;
   margin-top: 140px;
+}
+
+.blur-n-text {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0%;
+}
+.blur-n-text {
+    position: relative;
+    left: -13%;
+    top: 20%;
+}
+.sub-sect-4 p{ 
+    width: 446px;
+    margin: 0px auto 34px 293px;
+    text-align: left;
 }
 
 .email-insert {
@@ -397,4 +438,108 @@ footer p {
   color: #333333;
 }
 
+@media screen and (max-width: 600px){
+
+body {
+    overflow: hidden;
+}
+p {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+h1 {
+    width: 100%;
+    font-size: 36px ;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+button {
+    height: 60px;
+}
+h3{
+    font-weight: 500;
+    font-size: 20px;
+}
+/* hamburger menu */
+
+/*hero-header-section */
+.header-sect {
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-copy {
+    width: 90%;
+    padding-left: 0%;
+}
+
+.header-copy p {
+    max-width: 100%;
+}
+
+.header-img, 
+.rect-blur,.rect-blur-2, .rect-blur-3, .rect-blur-4, .rect-blur-5 {
+    display: none;
+}
+
+/*about-us section */
+.sect-2 {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.about-us-img  img{
+  display: block;
+  align-items: center;
+
+}
+
+.about-us-copy {
+    width: 300px;
+}
+
+.menu-items {
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.cta-download-btn h3 {
+  padding: 0px;
+  margin: 10px;
+}
+
+.sub-sect-2-title {
+  text-align: center;
+}
+
+.reason-section {
+    flex-direction: column;
+    align-items: center;
+}
+
+.blur-n-text {
+    display: none;
+}
+
+.reservation  {
+  height: 96px;
+}
+
+/*footer */
+
+footer {
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAC229;
+}
+footer img {
+  display: none;
+}
 
