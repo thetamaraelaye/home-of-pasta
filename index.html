@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       author="Tamara Elaye"
-      keywords="Pasta"
       name="description"
       content="Landing Page of Home of Pasta: Pasta has never tasted so good"
     />
     <!-- Link to Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
-    
+
     <!-- Poppins Font cdn-->
     <link
       rel="stylesheet"
@@ -36,32 +35,59 @@
   <body>
     <header>
       <!-- Navbar -->
-      <div class="nav">
-          <img
-            src="images/new-logo-home-of-pasta.png"
-            alt="logo"
-            class="logo"/>
-        <a href="#header"><p>Home</p></a>
-        <a href="#about"><p>About</p></a>
-        <a href="#menu"><p>Menu</p></a>
-        <a href="#"><p>Location</p></a>
+      <div class="nav" id="navbar">
+        <img src="images/new-logo-home-of-pasta.png" alt="logo" class="logo" />
         <a href="#contact"><p>Contact</p></a>
+        <a href="#"><p>Location</p></a>
+        <a href="#menu"><p>Menu</p></a>
+        <a href="#about"><p>About</p></a>
+        <a href="#header"><p>Home</p></a>
+        <a
+          title="hamburger icon for mobile view"
+          href="javascript:void(0);"
+          class="icon"
+          onclick="myFunction()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
       <div class="rect-blur">
-        <svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="130"
+          height="130"
+          viewBox="0 0 130 130"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g filter="url(#filter0_f_26_3)">
-          <rect x="40" y="40" width="50" height="50" fill="#FAC229"/>
+            <rect x="40" y="40" width="50" height="50" fill="#FAC229" />
           </g>
           <defs>
-          <filter id="filter0_f_26_3" x="0" y="0" width="130" height="130" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-          <feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_26_3"/>
-          </filter>
+            <filter
+              id="filter0_f_26_3"
+              x="0"
+              y="0"
+              width="130"
+              height="130"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="20"
+                result="effect1_foregroundBlur_26_3"
+              />
+            </filter>
           </defs>
-          </svg>
+        </svg>
       </div>
-     
+
       <!-- Hero-Header Section -->
       <div class="header-sect" id="header">
         <div class="header-copy">
@@ -74,7 +100,9 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
             at ipsum euismod massa.
           </p>
-          <button title="Reservation Button" class="cta-reservation-btn"><h3>MAKE RESERVATION</h3></button>
+          <button title="Reservation Button" class="btn cta-reservation-btn">
+            <h3>MAKE RESERVATION</h3>
+          </button>
         </div>
         <div class="header-img">
           <img src="images/Ellipse 1.png" alt="Hero Image of Pasta" />
@@ -84,18 +112,41 @@
 
     <main>
       <div class="rect-blur-2">
-        <svg class="rect-blur-2" width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          class="rect-blur-2"
+          width="130"
+          height="130"
+          viewBox="0 0 130 130"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g filter="url(#filter0_f_26_3)">
-          <rect x="40" y="40" width="50" height="50" fill="#FAC229"/>
+            <rect x="40" y="40" width="50" height="50" fill="#FAC229" />
           </g>
           <defs>
-          <filter id="filter0_f_26_3" x="0" y="0" width="130" height="130" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-          <feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_26_3"/>
-          </filter>
+            <filter
+              id="filter0_f_26_3"
+              x="0"
+              y="0"
+              width="130"
+              height="130"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="20"
+                result="effect1_foregroundBlur_26_3"
+              />
+            </filter>
           </defs>
-          </svg>
+        </svg>
       </div>
       <!-- About Us Section -->
       <section class="sect-2" id="about">
@@ -123,18 +174,41 @@
         </div>
       </section>
       <div class="rect-blur-3">
-        <svg class="rect-blur-2" width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          class="rect-blur-2"
+          width="130"
+          height="130"
+          viewBox="0 0 130 130"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g filter="url(#filter0_f_26_3)">
-          <rect x="40" y="40" width="50" height="50" fill="#FAC229"/>
+            <rect x="40" y="40" width="50" height="50" fill="#FAC229" />
           </g>
           <defs>
-          <filter id="filter0_f_26_3" x="0" y="0" width="130" height="130" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-          <feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_26_3"/>
-          </filter>
+            <filter
+              id="filter0_f_26_3"
+              x="0"
+              y="0"
+              width="130"
+              height="130"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="20"
+                result="effect1_foregroundBlur_26_3"
+              />
+            </filter>
           </defs>
-          </svg>
+        </svg>
       </div>
       <!-- Menu Section -->
       <section class="sect-3" id="menu">
@@ -158,23 +232,53 @@
               <p>Pasta with Sauce</p>
             </div>
           </div>
-          <button type="button" title="Download Button" class="cta-download-btn">
+          <div class="btn">
+            <button
+            type="button"
+            title="Download Button"
+            class="cta-download-btn"
+          >
             <h3>DOWNLOAD MENU</h3>
           </button>
+          </div>
+          
         </div>
         <div class="rect-blur-4">
-          <svg class="rect-blur-2" width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            class="rect-blur-2"
+            width="130"
+            height="130"
+            viewBox="0 0 130 130"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <g filter="url(#filter0_f_26_3)">
-            <rect x="40" y="40" width="50" height="50" fill="#FAC229"/>
+              <rect x="40" y="40" width="50" height="50" fill="#FAC229" />
             </g>
             <defs>
-            <filter id="filter0_f_26_3" x="0" y="0" width="130" height="130" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-            <feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_26_3"/>
-            </filter>
+              <filter
+                id="filter0_f_26_3"
+                x="0"
+                y="0"
+                width="130"
+                height="130"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="20"
+                  result="effect1_foregroundBlur_26_3"
+                />
+              </filter>
             </defs>
-            </svg>
+          </svg>
         </div>
         <!-- Why Choose Us Section -->
         <div class="sub-sect-2">
@@ -205,27 +309,51 @@
               </div>
             </div>
           </div>
-          <button
-            title="make-reservation-button"
-            type="button"
-            class="cta-reason"
-          >
-            <h3>MAKE RESERVATION</h3>
-          </button>
+          <div class="btn reservation">
+            <button
+              title="make-reservation-button"
+              type="button"
+              class="btn cta-reason"
+            >
+              <h3>MAKE RESERVATION</h3>
+            </button>
+          </div>
         </div>
         <div class="rect-blur-5">
-          <svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="130"
+            height="130"
+            viewBox="0 0 130 130"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <g filter="url(#filter0_f_26_3)">
-            <rect x="40" y="40" width="50" height="50" fill="#FAC229"/>
+              <rect x="40" y="40" width="50" height="50" fill="#FAC229" />
             </g>
             <defs>
-            <filter id="filter0_f_26_3" x="0" y="0" width="130" height="130" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-            <feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_26_3"/>
-            </filter>
+              <filter
+                id="filter0_f_26_3"
+                x="0"
+                y="0"
+                width="130"
+                height="130"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="20"
+                  result="effect1_foregroundBlur_26_3"
+                />
+              </filter>
             </defs>
-            </svg>
+          </svg>
         </div>
         <!-- Testimonials Section -->
         <div class="sub-sect-3">
@@ -249,8 +377,8 @@
             alt="Picture of Testifier"
             class="testifier-img"
           />
-          <div class="arrow-right" >
-            <img href='#' src="images/arrow.png" alt="">
+          <div class="arrow-right">
+            <img href="#" src="images/arrow.png" alt="" />
           </div>
         </div>
 
@@ -258,20 +386,44 @@
         <div class="sub-sect-4" id="contact">
           <h2>Subscribe to Our Newsletter</h2>
           <div class="blur-n-text">
-            <svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              width="130"
+              height="130"
+              viewBox="0 0 130 130"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <g filter="url(#filter0_f_26_3)">
-              <rect x="40" y="40" width="50" height="50" fill="#FAC229"/>
+                <rect x="40" y="40" width="50" height="50" fill="#FAC229" />
               </g>
               <defs>
-              <filter id="filter0_f_26_3" x="0" y="0" width="130" height="130" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-              <feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_26_3"/>
-              </filter>
+                <filter
+                  id="filter0_f_26_3"
+                  x="0"
+                  y="0"
+                  width="130"
+                  height="130"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="20"
+                    result="effect1_foregroundBlur_26_3"
+                  />
+                </filter>
               </defs>
-              </svg>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Consequat at ipsum euismod massa.</p>
+            </svg>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
+              at ipsum euismod massa.
+            </p>
           </div>
           <div class="subscribe">
             <input
@@ -281,7 +433,7 @@
               placeholder="Enter your Email Address"
               class="email-insert"
             />
-            <button type="submit" class="subscribe-btn">
+            <button type="submit" class="btn subscribe-btn">
               <h3>SUBSCRIBE</h3>
             </button>
           </div>
@@ -309,4 +461,5 @@
       </div>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
