@@ -5,7 +5,6 @@ body {
   font-style: normal;
   color: #333333;
   background: #ffffff;
-  overflow-x: hidden;
 }
 
 p {
@@ -15,7 +14,7 @@ p {
 }
 
 h1 {
-  width: 482px;
+  width: 100%;
   height: 120px;
   font-size: 40px;
   line-height: 60px;
@@ -28,12 +27,8 @@ h2 {
 
 h1,
 h2,
-h4 {
+h4, h3 {
   font-weight: 600;
-}
-
-h3 {
-  font-weight: 700;
 }
 
 a {
@@ -41,13 +36,12 @@ a {
 }
 
 button {
-  height: 90px;
+  height: 70px;
   background: #fac229;
   border-radius: 10px;
   border-style: none;
   margin: auto;
   text-align: center;
-  padding: 0;
 }
 
 button:hover {
@@ -57,6 +51,11 @@ button:hover {
 button:active {
     background-color: yellow;
     box-shadow: 0 5px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
 }
 
 /*Header Section*/
@@ -75,19 +74,23 @@ header {
     width: 100px;
     height: 40px;
     padding-top: 2px;
-    margin-right: 404px;
+    /* margin-right: 404px; */
     margin-left: 90px;
 }
 
 .nav a{
     text-decoration: none;
     font-size: 16px;
-    float: left;
+    float: right;
     margin-right: 50px;
 }
 
 .nav a:hover {
-    color: #FAC229;
+    border-bottom: 3px solid  #FAC229;
+}
+
+.nav .icon {
+  display: none;
 }
 
 .rect-blur{
@@ -107,7 +110,7 @@ header {
 }
 
 .header-copy {
-  width: 45%;
+  width: 42%;
   padding-left: 100px;
 }
 
@@ -118,19 +121,23 @@ header {
 
 .cta-reservation-btn {
   opacity: 0.8;
+  text-align: left;
   margin-top: 69px;
 }
 
 .header-copy button > h3 {
-    font-weight: 700;
     font-size: 28px;
     line-height: 42px;
-    width: 341px;
   }
 
 .header-img {
-  width: 430px;
-  height: 430px;
+  width: 40%;
+  margin: 0px auto;
+}
+
+.header-img img {
+  width: 100%;
+  height: 100%;
 }
 
 .rect-blur-2 {
@@ -141,18 +148,17 @@ header {
   display: flex;
   flex-direction: row;
   padding: 60.26px 87.3px 0px;
-  height: 561px;
   background: #fac229;
 }
 
 .about-us-img {
   margin-right: 80px;
-  width: 430px;
+  width: 50%;
   height: 447.02px;
 }
 
 .about-us-copy {
-  width: 446px;
+  width: 50%;
   height: 204px;
 }
 
@@ -197,11 +203,9 @@ header {
 
 .cta-download-btn {
   margin-top: 82px;
+  height: 50px;
 }
 
-.cta-download-btn h3{
-    padding: 26px 31px 32px 38px;
-}
 
 /*Why Choose Us Section */
 .rect-blur-4 {
@@ -255,14 +259,17 @@ header {
 .reservation {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .cta-reason {
-  width: 300px;
+  width: 248px;
+  padding: 10px;
+
 }
 
 .cta-reason h3 {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 38px;
 }
 
@@ -336,6 +343,7 @@ header {
     left: -13%;
     top: 20%;
 }
+
 .sub-sect-4 p{ 
     width: 446px;
     margin: 0px auto 34px 293px;
@@ -379,7 +387,7 @@ footer {
   background-image: url(images/footer-shape.png);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
+  overflow: none;
   padding-left: 30%;
   font-weight: 600;
   font-size: 18px;
@@ -441,7 +449,7 @@ footer p {
 @media screen and (max-width: 600px){
 
 body {
-    overflow: hidden;
+    overflow: none;
 }
 p {
     font-size: 12px;
@@ -450,22 +458,48 @@ p {
 
 h1 {
     width: 100%;
-    font-size: 36px ;
+    font-size: 28px;
+    text-align: center;
 }
 
 h2 {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 30px;
 }
 
 button {
-    height: 60px;
+    height: 70px;
 }
+
 h3{
     font-weight: 500;
     font-size: 20px;
 }
+
 /* hamburger menu */
+.nav a:not(:first-child) {display: none;}
+
+.nav a.icon {
+float: right;
+display: block;
+}
+
+.nav .responsive {position: relative;}
+
+.nav .responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.nav .responsive a {
+  float: left;
+  display: block;
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 12px;
+  font-size: 12px;
+}
 
 /*hero-header-section */
 .header-sect {
@@ -474,7 +508,7 @@ h3{
 }
 
 .header-copy {
-    width: 90%;
+    width: 85%;
     padding-left: 0%;
 }
 
@@ -492,54 +526,189 @@ h3{
     flex-direction: column-reverse;
     align-items: center;
     padding: 10px;
-    width: 100%;
+    width: 100vw;
+    padding: 20px ;
+}
+
+.about-us-img {
+  text-align: center;
 }
 
 .about-us-img  img{
   display: block;
-  align-items: center;
-
+  width: 80vw;
 }
 
 .about-us-copy {
     width: 300px;
+    height: 50%;
+    text-align: justify;
+
+}
+
+/*menu */
+.menu-header {
+  font-size: 24px;
+  line-height: 40px;
 }
 
 .menu-items {
-    margin-top: 20px;
-    flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-items div {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.cta-download-btn {
+  margin-top: 30px;
+  height: auto;
 }
 
 .cta-download-btn h3 {
   padding: 0px;
-  margin: 10px;
+  line-height: 24px;
 }
 
+/*why Choose Us Section */
 .sub-sect-2-title {
   text-align: center;
+  width: 100%;
+  margin: auto;
 }
+
+.brand-reasons {
+  justify-content: space-between;
+}
+
+.reason {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.first-reason-row {
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.reservation {
+  padding: 10px;
+}
+
 
 .reason-section {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.blur-n-text {
-    display: none;
+/* Testimonials Section */
+.testifier-copy {
+  width: 60vw;
+  padding: 10px;
+  margin: auto;
+  height: max-content;
 }
 
-.reservation  {
-  height: 96px;
+.testifier-copy p {
+  width: auto;
+  text-align: left;
+  margin-bottom: 6px;
 }
 
-/*footer */
+.arrow-right {
+  width: 40px;
+  height: 40px;
+  left: 75%;
+  bottom: 150px;
+  display: inline-flex;
 
-footer {
-    flex-direction: column;
-    align-items: center;
-    background-color: #FAC229;
 }
-footer img {
+
+.arrow-right img {
+  height: 20px;
+  padding: 10px 10px;
+  width: 20px;
+  right: auto;
+}
+
+.testifier-img {
+  width: 80px;
+  height: 80px;
+  top: -22px;
+  left: 22%;
+}
+
+
+/*Subscription Section */
+.sub-sect-4 {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+  overflow: none;
+}
+
+.sub-sect-4 p {
+  margin: auto;
+  width: 55vw;
+  text-align: justify;
+}
+
+.blur-n-text svg{
   display: none;
 }
 
+.subscribe {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+}
+
+.email-insert {
+  margin: 0px auto;
+  width: 70vw;
+  display: block;
+  padding-left: 10px;
+}
+
+
+.subscribe-btn {
+  width: auto;
+  padding: 5px;
+  left: 95px;
+}
+
+
+
+.subscribe-btn h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0%
+}
+/*footer */
+
+footer {
+    width: 100vw;
+    height: max-content;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #FAC229;
+    padding-bottom: 10px;
+    padding-left: 0%;
+}
+
+}
