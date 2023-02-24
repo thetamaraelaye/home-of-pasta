@@ -85,7 +85,7 @@ header {
 }
 
 .nav a:hover {
-    border-bottom: 3px solid  #FAC229;
+  border-bottom: 3px solid  #FAC229;
 }
 
 .nav .icon {
@@ -508,16 +508,18 @@ display: block;
 }
 
 .navresponsive a {
-  float: none;
+  float: right;
+  width: 100vw;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   margin: 2px;
   text-align: right;
 }
 
 
 .navresponsive a:hover{
-  border-bottom: 2px solid  #FAC229;
+  border-bottom: 3px solid  #FAC229;
+  text-shadow: none;
 }
 
 .navresponsive a:last-child {
